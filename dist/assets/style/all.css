@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  display: block; }
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 373px; } }
+
+header, footer {
+  background-color: #AA0601;
+  color: #fff; }
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px; }
+  .menu li a {
+    padding: 25px 0;
+    font-size: 20px;
+    line-height: 30px; }
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+      gap: 0;
+      width: 100%; }
+      .menu li {
+        width: 48%;
+        text-align: center; }
+        .menu li a {
+          padding: 12px 0;
+          font-size: 16px;
+          line-height: 24px; }
+      .menu.active {
+        display: inline-flex; } }
+
+.activt {
+  display: inline-block; }
+
+.logo {
+  margin-top: 12px;
+  margin-bottom: 12px; }
+
+.ham-icon {
+  display: none; }
+  @media (max-width: 767px) {
+    .ham-icon {
+      display: inline-block; } }
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 32px; }
+  @media (max-width: 992px) {
+    .footer {
+      padding-top: 48px;
+      padding-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding-top: 24px;
+      padding-bottom: 24px; } }
+
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px; }
+  @media (max-width: 767px) {
+    .footerNav {
+      margin-bottom: 24px; } }
+
+.footerMenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-bottom: 35px; }
+  .footerMenu a {
+    line-height: 24px;
+    font-size: 16px;
+    padding-top: 12px; }
+  @media (max-width: 992px) {
+    .footerMenu a {
+      padding-top: 4px; } }
+  @media (max-width: 767px) {
+    .footerMenu {
+      display: none; } }
+
+.community {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px; }
+  .community img {
+    width: 48px; }
+  @media (max-width: 992px) {
+    .community {
+      gap: 24px; }
+      .community img {
+        width: 4 40px; } }
+  @media (max-width: 767px) {
+    .community {
+      gap: 8px; }
+      .community img {
+        width: 24px; } }
+
+.tel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; }
+  .tel span {
+    font-size: 40px;
+    margin-right: 22px; }
+  @media (max-width: 767px) {
+    .tel span {
+      font-size: 24px;
+      margin-right: 10px; }
+    .tel h3 {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.mail {
+  display: flex;
+  align-items: center; }
+  .mail span {
+    font-size: 40px;
+    margin-right: 22px; }
+  @media (max-width: 767px) {
+    .mail span {
+      font-size: 16px;
+      margin-right: 10px; }
+    .mail h3 {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.line-w {
+  border: 1px solid;
+  margin-bottom: 32px; }
+  @media (max-width: 767px) {
+    .line-w {
+      margin-bottom: 16px; } }
+
+.footerMessage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+  .footerMessage p {
+    font-size: 16px;
+    line-height: 24px; }
+  @media (max-width: 767px) {
+    .footerMessage p {
+      margin-bottom: 8px; } }
+
+.serviceMessage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px; }
+  .serviceMessage a {
+    font-size: 16px;
+    line-height: 24px; }
+  @media (max-width: 767px) {
+    .serviceMessage {
+      gap: 0px; }
+      .serviceMessage li {
+        width: 100%;
+        padding-bottom: 8px; } }
+
+.qa-main {
+  padding-top: 96px;
+  padding-bottom: 80px; }
+  @media (max-width: 767px) {
+    .qa-main {
+      padding-top: 40px;
+      padding-top: 64px; } }
+  .qa-main h2 {
+    line-height: 72px;
+    font-size: 48px;
+    border-left: 8px #AA0601 solid;
+    padding-left: 16px;
+    margin-bottom: 32px;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .qa-main h2 {
+        line-height: 36px;
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .qa-main h3 {
+    line-height: 36px;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .qa-main h3 {
+        line-height: 36px;
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .qa-main h4 {
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .qa-main h4 {
+        line-height: 30px;
+        font-size: 20px; } }
+  .qa-main p {
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .qa-main p {
+        line-height: 24px;
+        font-size: 16px;
+        margin-bottom: 24px; } }
+
+body {
+  font-family: 'Noto Sans TC','Roboto', sans-serif; }
+
+h3 {
+  line-height: 54px;
+  font-size: 36px; }
+
+/*# sourceMappingURL=all.css.map */
